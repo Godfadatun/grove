@@ -4,7 +4,8 @@ import logger from './logger'
 mongoose.Promise = global.Promise;
 
 const url = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@ds215910.mlab.com:15910/contact`
-const uri = 'mongodb://localhost:27017/contact'
+// const uri = 'mongodb://localhost:27017/contact'
+const uri = 'mongodb+srv://nest_test:Dafecommand06!@cluster0.paf66.mongodb.net/nest_test?retryWrites=true&w=majority'
 console.log(uri)
 const dev = "dev"
 const connection = mongoose.connect(uri, {useUnifiedTopology: true, useNewUrlParser: true});

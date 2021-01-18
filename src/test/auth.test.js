@@ -16,11 +16,11 @@ beforeEach((done) => {
     )
 })
 
-// afterEach((done) => {
-//     mongoose.connection.db.dropDatabase(() => {
-//         mongoose.connection.close(() => done())
-//     })
-// })
+afterEach((done) => {
+    mongoose.connection.db.dropDatabase(() => {
+        mongoose.connection.close(() => done())
+    })
+})
 
 
 test('POST /auth/signup', async () => {
